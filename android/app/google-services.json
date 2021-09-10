@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "741591137582",
+    "project_id": "nmitpreviousyearpapers",
+    "storage_bucket": "nmitpreviousyearpapers.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:741591137582:android:e5e5e89b224d576e0a4ebf",
+        "android_client_info": {
+          "package_name": "com.example.flutter_application_1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "741591137582-kisgruiu4b9vdgs37ppke0132pmb5gj7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuDdaDBmg_ZNtk3QXKzOJA4tXv416oEuQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "741591137582-kisgruiu4b9vdgs37ppke0132pmb5gj7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
