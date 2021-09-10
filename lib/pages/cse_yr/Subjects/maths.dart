@@ -18,7 +18,7 @@ class _Maths1State extends State<Maths1> {
       length: 2,
       child: Scaffold(
         appBar: AppBar(
-          title: Text('Engineering Mathematics - I'),
+          title: Text('Engineering Mathematics - III'),
           centerTitle: true,
           bottom: TabBar(tabs: [
             Tab(text: "MSE"),
