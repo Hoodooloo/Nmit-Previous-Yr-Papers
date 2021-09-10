@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/pages/cse_yr/firstyr.dart';
+import 'package:flutter_application_1/pages/cse_yr/thirdyr.dart';
 
 class Cse extends StatefulWidget {
   Cse({Key? key}) : super(key: key);
@@ -29,7 +29,7 @@ class _CseState extends State<Cse> {
                   backgroundColor:
                       MaterialStateProperty.all(Colors.amber.shade400)),
               icon: Icon(Icons.trending_flat_outlined),
-              label: Text('First Year'),
+              label: Text('Third Year'),
             ),
           )
         ],

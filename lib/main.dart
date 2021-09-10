@@ -12,7 +12,7 @@ Future main() async {
 
   runApp(
       MaterialApp(
-
+        debugShowCheckedModeBanner: false,
         initialRoute: '/home',
         routes: {
           '/': (

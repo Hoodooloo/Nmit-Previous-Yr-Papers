@@ -30,7 +30,7 @@ class _FirstYearState extends State<FirstYear> {
                   backgroundColor:
                       MaterialStateProperty.all(Colors.red.shade600)),
               icon: Icon(Icons.trending_flat_outlined),
-              label: Text('Engineering Mathematics - I'),
+              label: Text('Engineering Mathematics - III'),
             ),
           )
         ],
