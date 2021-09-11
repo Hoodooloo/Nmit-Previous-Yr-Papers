@@ -3,14 +3,14 @@ import 'dart:io';
 import 'pdf_api/pdf_api.dart';
 import 'pdf_api/pdf_viewer.dart';
 
-class AiandNN extends StatefulWidget {
-  const AiandNN({Key? key}) : super(key: key);
+class Coa extends StatefulWidget {
+  const Coa({Key? key}) : super(key: key);
 
   @override
-  _AiandNNState createState() => _AiandNNState();
+  _CoaState createState() => _CoaState();
 }
 
-class _AiandNNState extends State<AiandNN> {
+class _CoaState extends State<Coa> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -20,7 +20,7 @@ class _AiandNNState extends State<AiandNN> {
           child: Scaffold(
             backgroundColor: Colors.grey.shade400,
             appBar: AppBar(
-              title: Text('Artificial Intelligence and Neural Networks'),
+              title: Text('Computer Organization and Architecture'),
               centerTitle: true,
               bottom: TabBar(tabs: [
                 Tab(text: "MSE"),
@@ -53,6 +53,7 @@ class _AiandNNState extends State<AiandNN> {
                           openPDF(context, file);
                         },
                         child: Text('MSE II')),
+
                     ElevatedButton(
                         onPressed: () async {
                           final url =
@@ -87,3 +88,4 @@ class _AiandNNState extends State<AiandNN> {
     MaterialPageRoute(builder: (context) => PdfViewer(file: file)),
   );
 }
+

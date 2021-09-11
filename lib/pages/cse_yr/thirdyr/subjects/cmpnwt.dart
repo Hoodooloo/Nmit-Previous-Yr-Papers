@@ -18,6 +18,7 @@ class _CmpNetState extends State<CmpNet> {
         home: DefaultTabController(
           length: 2,
           child: Scaffold(
+            backgroundColor: Colors.grey.shade400,
             appBar: AppBar(
               title: Text('Computer Networks'),
               centerTitle: true,
@@ -30,7 +31,10 @@ class _CmpNetState extends State<CmpNet> {
               children: [
                 Padding(
                   padding: const EdgeInsets.all(16.0),
-                  child: Column(children: [
+                  child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
                     ElevatedButton(
                         onPressed: () async {
                           final url =
@@ -60,7 +64,10 @@ class _CmpNetState extends State<CmpNet> {
                         child: Text('MSE III')),
                   ]),
                 ),
-                Column(children: [
+                Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
                   ElevatedButton(
                       onPressed: () async {
                         final url = 'Cse/3Yr/Mathematics-3/see/RandomPaper.pdf';

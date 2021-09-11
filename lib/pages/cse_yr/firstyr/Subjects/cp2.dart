@@ -18,6 +18,7 @@ class _Cp2State extends State<Cp2> {
         home: DefaultTabController(
           length: 2,
           child: Scaffold(
+            backgroundColor: Colors.grey.shade400,
             appBar: AppBar(
               title: Text('Computer Programming 2'),
               centerTitle: true,
@@ -30,7 +31,10 @@ class _Cp2State extends State<Cp2> {
               children: [
                 Padding(
                   padding: const EdgeInsets.all(16.0),
-                  child: Column(children: [
+                  child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
                     ElevatedButton(
                         onPressed: () async {
                           final url =
@@ -49,9 +53,21 @@ class _Cp2State extends State<Cp2> {
                           openPDF(context, file);
                         },
                         child: Text('MSE II')),
+                    ElevatedButton(
+                        onPressed: () async {
+                          final url =
+                              '/Cse/3Yr/Mathematics-3/mse/MSE 2 3rd sem CS QP1-Part B.pdf';
+                          final file = await PDFApi.loadFirebase(url);
+                          if (file == null) return;
+                          openPDF(context, file);
+                        },
+                        child: Text('MSE III')),
                   ]),
                 ),
-                Column(children: [
+                Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
                   ElevatedButton(
                       onPressed: () async {
                         final url = 'Cse/3Yr/Mathematics-3/see/RandomPaper.pdf';

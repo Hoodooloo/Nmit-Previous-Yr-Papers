@@ -18,6 +18,7 @@ class _PhysicsState extends State<Physics> {
         home: DefaultTabController(
           length: 2,
           child: Scaffold(
+            backgroundColor: Colors.grey.shade400,
             appBar: AppBar(
               title: Text('Engineering Physics'),
               centerTitle: true,
@@ -30,7 +31,10 @@ class _PhysicsState extends State<Physics> {
               children: [
                 Padding(
                   padding: const EdgeInsets.all(16.0),
-                  child: Column(children: [
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
                     ElevatedButton(
                         onPressed: () async {
                           final url =
@@ -57,10 +61,13 @@ class _PhysicsState extends State<Physics> {
                           if (file == null) return;
                           openPDF(context, file);
                         },
-                        child: Text('MSE II')),
+                        child: Text('MSE III')),
                   ]),
                 ),
-                Column(children: [
+                Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
                   ElevatedButton(
                       onPressed: () async {
                         final url = 'Cse/3Yr/Mathematics-3/see/RandomPaper.pdf';

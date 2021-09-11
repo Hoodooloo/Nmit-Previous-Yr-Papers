@@ -3,14 +3,14 @@ import 'dart:io';
 import 'pdf_api/pdf_api.dart';
 import 'pdf_api/pdf_viewer.dart';
 
-class AiandNN extends StatefulWidget {
-  const AiandNN({Key? key}) : super(key: key);
+class Os extends StatefulWidget {
+  const Os({Key? key}) : super(key: key);
 
   @override
-  _AiandNNState createState() => _AiandNNState();
+  _OsState createState() => _OsState();
 }
 
-class _AiandNNState extends State<AiandNN> {
+class _OsState extends State<Os> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -20,7 +20,7 @@ class _AiandNNState extends State<AiandNN> {
           child: Scaffold(
             backgroundColor: Colors.grey.shade400,
             appBar: AppBar(
-              title: Text('Artificial Intelligence and Neural Networks'),
+              title: Text('Operating System'),
               centerTitle: true,
               bottom: TabBar(tabs: [
                 Tab(text: "MSE"),

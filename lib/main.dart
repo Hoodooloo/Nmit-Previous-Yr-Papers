@@ -25,5 +25,6 @@ Future main() async {
               context) =>
               Cse()
         },
+        theme: ThemeData(scaffoldBackgroundColor: Color(0x929394)),
       ));
 }

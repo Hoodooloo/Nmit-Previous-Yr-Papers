@@ -1,4 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/pages/cse_yr/firstyr/Subjects/bee.dart';
+import 'package:flutter_application_1/pages/cse_yr/firstyr/Subjects/ble.dart';
+import 'package:flutter_application_1/pages/cse_yr/firstyr/Subjects/caed.dart';
+import 'package:flutter_application_1/pages/cse_yr/firstyr/Subjects/chemistry.dart';
+import 'package:flutter_application_1/pages/cse_yr/firstyr/Subjects/cp1.dart';
+import 'package:flutter_application_1/pages/cse_yr/firstyr/Subjects/cp2.dart';
+import 'package:flutter_application_1/pages/cse_yr/firstyr/Subjects/em.dart';
+import 'package:flutter_application_1/pages/cse_yr/firstyr/Subjects/eme.dart';
+import 'package:flutter_application_1/pages/cse_yr/firstyr/Subjects/physics.dart';
 import 'firstyr/Subjects/maths.dart';
 import 'firstyr/Subjects/maths2.dart';
 // import 'package:syncfusion_flutter_pdf/pdf.dart';
@@ -14,6 +23,7 @@ class _FirstYearState extends State<FirstYear> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey.shade400,
       appBar: AppBar(
         title: Text('Select Your Subject'),
         centerTitle: true,
@@ -25,7 +35,7 @@ class _FirstYearState extends State<FirstYear> {
             Padding(
               padding: const EdgeInsets.all(10.0),
               child: Center(
-                child: Text('1ST Semester',
+                child: Text('1st Semester',
                     style: TextStyle(
                         fontSize: 20.0,
                         fontWeight: FontWeight.bold,
@@ -51,7 +61,7 @@ class _FirstYearState extends State<FirstYear> {
               child: ElevatedButton.icon(
                 onPressed: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Maths1()));
+                      MaterialPageRoute(builder: (context) => Bee()));
                 },
                 style: ButtonStyle(
                     backgroundColor:
@@ -65,7 +75,7 @@ class _FirstYearState extends State<FirstYear> {
               child: ElevatedButton.icon(
                 onPressed: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Maths1()));
+                      MaterialPageRoute(builder: (context) => Eme()));
                 },
                 style: ButtonStyle(
                     backgroundColor:
@@ -79,7 +89,7 @@ class _FirstYearState extends State<FirstYear> {
               child: ElevatedButton.icon(
                 onPressed: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Maths1()));
+                      MaterialPageRoute(builder: (context) => Physics()));
                 },
                 style: ButtonStyle(
                     backgroundColor:
@@ -93,7 +103,7 @@ class _FirstYearState extends State<FirstYear> {
               child: ElevatedButton.icon(
                 onPressed: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Maths1()));
+                      MaterialPageRoute(builder: (context) => Cp1()));
                 },
                 style: ButtonStyle(
                     backgroundColor:
@@ -110,7 +120,7 @@ class _FirstYearState extends State<FirstYear> {
             Padding(
               padding: const EdgeInsets.all(16.0),
               child: Center(
-                child: Text('2ND Semester',
+                child: Text('2nd Semester',
                     style: TextStyle(
                         fontSize: 20.0,
                         fontWeight: FontWeight.bold,
@@ -136,7 +146,7 @@ class _FirstYearState extends State<FirstYear> {
               child: ElevatedButton.icon(
                 onPressed: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Maths1()));
+                      MaterialPageRoute(builder: (context) => Ble()));
                 },
                 style: ButtonStyle(
                     backgroundColor:
@@ -150,7 +160,7 @@ class _FirstYearState extends State<FirstYear> {
               child: ElevatedButton.icon(
                 onPressed: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Maths1()));
+                      MaterialPageRoute(builder: (context) => Caed()));
                 },
                 style: ButtonStyle(
                     backgroundColor:
@@ -164,7 +174,7 @@ class _FirstYearState extends State<FirstYear> {
               child: ElevatedButton.icon(
                 onPressed: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Maths1()));
+                      MaterialPageRoute(builder: (context) => Chemistry()));
                 },
                 style: ButtonStyle(
                     backgroundColor:
@@ -178,7 +188,7 @@ class _FirstYearState extends State<FirstYear> {
               child: ElevatedButton.icon(
                 onPressed: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Maths1()));
+                      MaterialPageRoute(builder: (context) => Cp2()));
                 },
                 style: ButtonStyle(
                     backgroundColor:
@@ -192,7 +202,7 @@ class _FirstYearState extends State<FirstYear> {
               child: ElevatedButton.icon(
                 onPressed: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Maths1()));
+                      MaterialPageRoute(builder: (context) => Em()));
                 },
                 style: ButtonStyle(
                     backgroundColor:

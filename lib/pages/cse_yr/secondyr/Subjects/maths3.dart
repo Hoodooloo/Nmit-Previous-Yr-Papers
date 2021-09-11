@@ -3,14 +3,14 @@ import 'dart:io';
 import 'pdf_api/pdf_api.dart';
 import 'pdf_api/pdf_viewer.dart';
 
-class AiandNN extends StatefulWidget {
-  const AiandNN({Key? key}) : super(key: key);
+class Maths3 extends StatefulWidget {
+  Maths3({Key? key}) : super(key: key);
 
   @override
-  _AiandNNState createState() => _AiandNNState();
+  _Maths3State createState() => _Maths3State();
 }
 
-class _AiandNNState extends State<AiandNN> {
+class _Maths3State extends State<Maths3> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -20,7 +20,7 @@ class _AiandNNState extends State<AiandNN> {
           child: Scaffold(
             backgroundColor: Colors.grey.shade400,
             appBar: AppBar(
-              title: Text('Artificial Intelligence and Neural Networks'),
+              title: Text('Engineering Mathematics - III'),
               centerTitle: true,
               bottom: TabBar(tabs: [
                 Tab(text: "MSE"),

@@ -1,21 +1,27 @@
 import 'package:flutter/material.dart';
-import '/pages/cse_yr/thirdyr/subjects/bdt.dart';
-import '/pages/cse_yr/thirdyr/subjects/cns.dart';
-import '/pages/cse_yr/thirdyr/subjects/spm.dart';
-import '/pages/cse_yr/thirdyr/subjects/aiann.dart';
-import '/pages/cse_yr/thirdyr/subjects/datamng.dart';
-import '/pages/cse_yr/thirdyr/subjects/flaat.dart';
-import '/pages/cse_yr/thirdyr/subjects/sftnwt.dart';
-import '/pages/cse_yr/thirdyr/subjects/cmpnwt.dart';
+import 'package:flutter_application_1/pages/cse_yr/secondyr/Subjects/coa.dart';
+import 'package:flutter_application_1/pages/cse_yr/secondyr/Subjects/daa.dart';
+import 'package:flutter_application_1/pages/cse_yr/secondyr/Subjects/dadc.dart';
+import 'package:flutter_application_1/pages/cse_yr/secondyr/Subjects/dbms.dart';
+import 'package:flutter_application_1/pages/cse_yr/secondyr/Subjects/dmsg.dart';
+import 'package:flutter_application_1/pages/cse_yr/secondyr/Subjects/ds.dart';
+import 'package:flutter_application_1/pages/cse_yr/secondyr/Subjects/java.dart';
+import 'package:flutter_application_1/pages/cse_yr/secondyr/Subjects/maths3.dart';
+import 'package:flutter_application_1/pages/cse_yr/secondyr/Subjects/maths4.dart';
+import 'package:flutter_application_1/pages/cse_yr/secondyr/Subjects/oops.dart';
+import 'package:flutter_application_1/pages/cse_yr/secondyr/Subjects/os.dart';
+import 'firstyr/Subjects/maths.dart';
+import 'firstyr/Subjects/maths2.dart';
+// import 'package:syncfusion_flutter_pdf/pdf.dart';
 
-class ThirdYr extends StatefulWidget {
-  const ThirdYr({Key? key}) : super(key: key);
+class SecondYear extends StatefulWidget {
+  const SecondYear({Key? key}) : super(key: key);
 
   @override
-  _ThirdYrState createState() => _ThirdYrState();
+    _SecondYearState createState() => _SecondYearState();
 }
 
-class _ThirdYrState extends State<ThirdYr> {
+class _SecondYearState extends State<SecondYear> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,6 +29,7 @@ class _ThirdYrState extends State<ThirdYr> {
       appBar: AppBar(
         title: Text('Select Your Subject'),
         centerTitle: true,
+        backgroundColor: Colors.blue.shade300,
       ),
       body: Wrap(children: [
         Column(
@@ -31,7 +38,7 @@ class _ThirdYrState extends State<ThirdYr> {
             Padding(
               padding: const EdgeInsets.all(10.0),
               child: Center(
-                child: Text('5th Semester',
+                child: Text('3rd Semester',
                     style: TextStyle(
                         fontSize: 20.0,
                         fontWeight: FontWeight.bold,
@@ -43,13 +50,13 @@ class _ThirdYrState extends State<ThirdYr> {
               child: ElevatedButton.icon(
                 onPressed: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => CmpNet()));
+                      MaterialPageRoute(builder: (context) => Maths3()));
                 },
                 style: ButtonStyle(
                     backgroundColor:
                     MaterialStateProperty.all(Colors.green.shade400)),
                 icon: Icon(Icons.trending_flat_outlined),
-                label: Text('Computer Networks'),
+                label: Text('Engineering Mathematics - III'),
               ),
             ),
             Padding(
@@ -57,13 +64,13 @@ class _ThirdYrState extends State<ThirdYr> {
               child: ElevatedButton.icon(
                 onPressed: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => SoftwareEng()));
+                      MaterialPageRoute(builder: (context) => Dadc()));
                 },
                 style: ButtonStyle(
                     backgroundColor:
                     MaterialStateProperty.all(Colors.green.shade400)),
                 icon: Icon(Icons.trending_flat_outlined),
-                label: Text('Software Engineering'),
+                label: Text('Design of Analog and Digital Circuits'),
               ),
             ),
             Padding(
@@ -71,13 +78,13 @@ class _ThirdYrState extends State<ThirdYr> {
               child: ElevatedButton.icon(
                 onPressed: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Datamine()));
+                      MaterialPageRoute(builder: (context) => Ds()));
                 },
                 style: ButtonStyle(
                     backgroundColor:
                     MaterialStateProperty.all(Colors.green.shade400)),
                 icon: Icon(Icons.trending_flat_outlined),
-                label: Text('Data Mining'),
+                label: Text('Data Structure'),
               ),
             ),
             Padding(
@@ -85,13 +92,13 @@ class _ThirdYrState extends State<ThirdYr> {
               child: ElevatedButton.icon(
                 onPressed: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => AiandNN()));
+                      MaterialPageRoute(builder: (context) => Dmsg()));
                 },
                 style: ButtonStyle(
                     backgroundColor:
                     MaterialStateProperty.all(Colors.green.shade400)),
                 icon: Icon(Icons.trending_flat_outlined),
-                label: Text('Artificial Intelligence and Neural Networks'),
+                label: Text('DMSGT'),
               ),
             ),
             Padding(
@@ -99,13 +106,27 @@ class _ThirdYrState extends State<ThirdYr> {
               child: ElevatedButton.icon(
                 onPressed: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => ForLangAT()));
+                      MaterialPageRoute(builder: (context) => Coa()));
                 },
                 style: ButtonStyle(
                     backgroundColor:
                     MaterialStateProperty.all(Colors.green.shade400)),
                 icon: Icon(Icons.trending_flat_outlined),
-                label: Text('Formal Languages and Automata Theory'),
+                label: Text('CO&A'),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(8, 0, 8, 3),
+              child: ElevatedButton.icon(
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Oops()));
+                },
+                style: ButtonStyle(
+                    backgroundColor:
+                    MaterialStateProperty.all(Colors.green.shade400)),
+                icon: Icon(Icons.trending_flat_outlined),
+                label: Text('OOPS'),
               ),
             ),
           ],
@@ -116,7 +137,7 @@ class _ThirdYrState extends State<ThirdYr> {
             Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: Center(
-                  child: Text('6th Semester',
+                  child: Text('4th Semester',
                     style: TextStyle(
                         fontSize: 20.0,
                         fontWeight: FontWeight.bold,
@@ -128,13 +149,13 @@ class _ThirdYrState extends State<ThirdYr> {
               child: ElevatedButton.icon(
                 onPressed: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => BigDataTech()));
+                      MaterialPageRoute(builder: (context) => Daa()));
                 },
                 style: ButtonStyle(
                     backgroundColor:
-                    MaterialStateProperty.all(Colors.deepPurple.shade400)),
+                    MaterialStateProperty.all(Colors.orange)),
                 icon: Icon(Icons.trending_flat_outlined),
-                label: Text('Big Data Technologies'),
+                label: Text('DAA'),
               ),
             ),
             Padding(
@@ -142,13 +163,13 @@ class _ThirdYrState extends State<ThirdYr> {
               child: ElevatedButton.icon(
                 onPressed: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => CrypNS()));
+                      MaterialPageRoute(builder: (context) => Java()));
                 },
                 style: ButtonStyle(
                     backgroundColor:
-                    MaterialStateProperty.all(Colors.deepPurple.shade400)),
+                    MaterialStateProperty.all(Colors.orange)),
                 icon: Icon(Icons.trending_flat_outlined),
-                label: Text('Cryptography and Network Security'),
+                label: Text('Java'),
               ),
             ),
             Padding(
@@ -156,18 +177,49 @@ class _ThirdYrState extends State<ThirdYr> {
               child: ElevatedButton.icon(
                 onPressed: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => SoftPM()));
+                      MaterialPageRoute(builder: (context) => Dbms()));
                 },
                 style: ButtonStyle(
                     backgroundColor:
-                    MaterialStateProperty.all(Colors.deepPurple.shade400)),
+                    MaterialStateProperty.all(Colors.orange)),
                 icon: Icon(Icons.trending_flat_outlined),
-                label: Text('Software Project Management'),
+                label: Text('DBMS'),
               ),
             ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(8, 0, 8, 3),
+              child: ElevatedButton.icon(
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Os()));
+                },
+                style: ButtonStyle(
+                    backgroundColor:
+                    MaterialStateProperty.all(Colors.orange)),
+                icon: Icon(Icons.trending_flat_outlined),
+                label: Text('OS'),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(8, 0, 8, 3),
+              child: ElevatedButton.icon(
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Maths4()));
+                },
+                style: ButtonStyle(
+                    backgroundColor:
+                    MaterialStateProperty.all(Colors.orange)),
+                icon: Icon(Icons.trending_flat_outlined),
+                label: Text('Engineering Maths-IV'),
+              ),
+            ),
+
           ],
         ),
       ]),
     );
   }
 }
+
+

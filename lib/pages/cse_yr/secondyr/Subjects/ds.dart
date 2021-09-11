@@ -3,14 +3,14 @@ import 'dart:io';
 import 'pdf_api/pdf_api.dart';
 import 'pdf_api/pdf_viewer.dart';
 
-class AiandNN extends StatefulWidget {
-  const AiandNN({Key? key}) : super(key: key);
+class Ds extends StatefulWidget {
+  const Ds({Key? key}) : super(key: key);
 
   @override
-  _AiandNNState createState() => _AiandNNState();
+  _DsState createState() => _DsState();
 }
 
-class _AiandNNState extends State<AiandNN> {
+class _DsState extends State<Ds> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -20,7 +20,7 @@ class _AiandNNState extends State<AiandNN> {
           child: Scaffold(
             backgroundColor: Colors.grey.shade400,
             appBar: AppBar(
-              title: Text('Artificial Intelligence and Neural Networks'),
+              title: Text('Data Structure'),
               centerTitle: true,
               bottom: TabBar(tabs: [
                 Tab(text: "MSE"),
@@ -53,15 +53,6 @@ class _AiandNNState extends State<AiandNN> {
                           openPDF(context, file);
                         },
                         child: Text('MSE II')),
-                    ElevatedButton(
-                        onPressed: () async {
-                          final url =
-                              '/Cse/3Yr/Mathematics-3/mse/MSE 2 3rd sem CS QP1-Part B.pdf';
-                          final file = await PDFApi.loadFirebase(url);
-                          if (file == null) return;
-                          openPDF(context, file);
-                        },
-                        child: Text('MSE III')),
                   ]),
                 ),
                 Column(
@@ -76,6 +67,15 @@ class _AiandNNState extends State<AiandNN> {
                         openPDF(context, file);
                       },
                       child: Text('SEE ')),
+                  ElevatedButton(
+                      onPressed: () async {
+                        final url =
+                            '/Cse/3Yr/Mathematics-3/mse/MSE 2 3rd sem CS QP1-Part B.pdf';
+                        final file = await PDFApi.loadFirebase(url);
+                        if (file == null) return;
+                        openPDF(context, file);
+                      },
+                      child: Text('MSE III')),
                 ])
               ],
             ),

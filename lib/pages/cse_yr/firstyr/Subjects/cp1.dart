@@ -3,14 +3,14 @@ import 'dart:io';
 import 'pdf_api/pdf_api.dart';
 import 'pdf_api/pdf_viewer.dart';
 
-class cp1 extends StatefulWidget {
-  const cp1({Key? key}) : super(key: key);
+class Cp1 extends StatefulWidget {
+  const Cp1({Key? key}) : super(key: key);
 
   @override
-  _cp1State createState() => _cp1State();
+  _Cp1State createState() => _Cp1State();
 }
 
-class _cp1State extends State<cp1> {
+class _Cp1State extends State<Cp1> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -18,6 +18,7 @@ class _cp1State extends State<cp1> {
         home: DefaultTabController(
           length: 2,
           child: Scaffold(
+            backgroundColor: Colors.grey.shade400,
             appBar: AppBar(
               title: Text('Computer Programming 1'),
               centerTitle: true,
@@ -30,7 +31,10 @@ class _cp1State extends State<cp1> {
               children: [
                 Padding(
                   padding: const EdgeInsets.all(16.0),
-                  child: Column(children: [
+                  child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
                     ElevatedButton(
                         onPressed: () async {
                           final url =
@@ -57,10 +61,13 @@ class _cp1State extends State<cp1> {
                           if (file == null) return;
                           openPDF(context, file);
                         },
-                        child: Text('MSE II')),
+                        child: Text('MSE III')),
                   ]),
                 ),
-                Column(children: [
+                Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
                   ElevatedButton(
                       onPressed: () async {
                         final url = 'Cse/3Yr/Mathematics-3/see/RandomPaper.pdf';

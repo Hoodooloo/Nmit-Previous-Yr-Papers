@@ -18,6 +18,7 @@ class _SoftwareEngState extends State<SoftwareEng> {
         home: DefaultTabController(
           length: 2,
           child: Scaffold(
+            backgroundColor: Colors.grey.shade400,
             appBar: AppBar(
               title: Text('Software Networks'),
               centerTitle: true,
@@ -30,7 +31,10 @@ class _SoftwareEngState extends State<SoftwareEng> {
               children: [
                 Padding(
                   padding: const EdgeInsets.all(16.0),
-                  child: Column(children: [
+                  child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
                     ElevatedButton(
                         onPressed: () async {
                           final url =
@@ -60,7 +64,10 @@ class _SoftwareEngState extends State<SoftwareEng> {
                         child: Text('MSE III')),
                   ]),
                 ),
-                Column(children: [
+                Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
                   ElevatedButton(
                       onPressed: () async {
                         final url = 'Cse/3Yr/Mathematics-3/see/RandomPaper.pdf';

@@ -11,6 +11,7 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey,
       body: SafeArea(
         child: Align(
           alignment: Alignment.topCenter,
@@ -19,18 +20,20 @@ class _HomeState extends State<Home> {
             spacing: 10.0,
             runSpacing: 20.0,
             children: [
-              Container(
-                color: Colors.amberAccent,
-                child: Padding(
-                  padding: const EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 10.0),
-                  child: TextButton.icon(
-                      onPressed: () {
-                        Navigator.pushNamed(context, '/cse');
-                      },
-                      style:
-                          TextButton.styleFrom(fixedSize: Size.fromHeight(30)),
-                      icon: Image.asset('assets/cse.jpg'),
-                      label: Text('Computer Science Engineering')),
+              Center(
+                child: Container(
+                  color: Colors.amberAccent,
+                  child: Padding(
+                    padding: const EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 10.0),
+                    child: TextButton.icon(
+                        onPressed: () {
+                          Navigator.pushNamed(context, '/cse');
+                        },
+                        style:
+                            TextButton.styleFrom(fixedSize: Size.fromHeight(30)),
+                        icon: Image.asset('assets/cse.jpg'),
+                        label: Text('Computer Science Engineering')),
+                  ),
                 ),
               ),
             ],
