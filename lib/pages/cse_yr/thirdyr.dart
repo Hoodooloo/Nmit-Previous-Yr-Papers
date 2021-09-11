@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/pages/cse_yr/Subjects/maths.dart';
+import 'firstyr/Subjects/maths.dart';
 // import 'package:syncfusion_flutter_pdf/pdf.dart';
 
 class FirstYear extends StatefulWidget {
@@ -19,20 +19,44 @@ class _FirstYearState extends State<FirstYear> {
       ),
       body: Row(
         children: [
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: ElevatedButton.icon(
-              onPressed: () {
-                Navigator.push(
-                    context, MaterialPageRoute(builder: (context) => Maths1()));
-              },
-              style: ButtonStyle(
-                  backgroundColor:
-                      MaterialStateProperty.all(Colors.red.shade600)),
-              icon: Icon(Icons.trending_flat_outlined),
-              label: Text('Engineering Mathematics - III'),
-            ),
-          )
+          Column(
+            children: [
+              Text('3RD Semester',
+                  style: TextStyle(
+                      fontSize: 20.0,
+                      fontWeight: FontWeight.bold,
+                      fontStyle: FontStyle.italic,
+                      fontFamily: "Kalam")),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: ElevatedButton.icon(
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Maths1()));
+                  },
+                  style: ButtonStyle(
+                      backgroundColor:
+                          MaterialStateProperty.all(Colors.red.shade600)),
+                  icon: Icon(Icons.trending_flat_outlined),
+                  label: Text('Engineering Mathematics - III'),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: ElevatedButton.icon(
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Maths1()));
+                  },
+                  style: ButtonStyle(
+                      backgroundColor:
+                          MaterialStateProperty.all(Colors.red.shade600)),
+                  icon: Icon(Icons.trending_flat_outlined),
+                  label: Text(''),
+                ),
+              )
+            ],
+          ),
         ],
       ),
     );
