@@ -38,7 +38,7 @@ class _DaaState extends State<Daa> {
                     ElevatedButton(
                         onPressed: () async {
                           final url =
-                              'Cse/3Yr/Mathematics-3/mse/MSE 1 3rd sem CS QP1 Part B.pdf';
+                              '/Cse/2Yr/even/daa/mse/MSE-QP-2021CSE_DAA.pdf';
                           final file = await PDFApi.loadFirebase(url);
                           if (file == null) return;
                           openPDF(context, file);
@@ -47,7 +47,7 @@ class _DaaState extends State<Daa> {
                     ElevatedButton(
                         onPressed: () async {
                           final url =
-                              '/Cse/3Yr/Mathematics-3/mse/MSE 2 3rd sem CS QP1-Part B.pdf';
+                              '/Cse/2Yr/even/daa/mse/MSE2-QP-2021CSE_DAA.pdf';
                           final file = await PDFApi.loadFirebase(url);
                           if (file == null) return;
                           openPDF(context, file);
@@ -56,7 +56,7 @@ class _DaaState extends State<Daa> {
                     ElevatedButton(
                         onPressed: () async {
                           final url =
-                              '/Cse/3Yr/Mathematics-3/mse/MSE 2 3rd sem CS QP1-Part B.pdf';
+                              '/Cse/2Yr/even/daa/mse/MSE3-QP-2021DAA.pdf';
                           final file = await PDFApi.loadFirebase(url);
                           if (file == null) return;
                           openPDF(context, file);

@@ -38,7 +38,7 @@ class _OsState extends State<Os> {
                     ElevatedButton(
                         onPressed: () async {
                           final url =
-                              'Cse/3Yr/Mathematics-3/mse/MSE 1 3rd sem CS QP1 Part B.pdf';
+                              '/Cse/2Yr/even/os/mse/OS_2021-MSE-1_QP.pdf';
                           final file = await PDFApi.loadFirebase(url);
                           if (file == null) return;
                           openPDF(context, file);
@@ -56,7 +56,7 @@ class _OsState extends State<Os> {
                     ElevatedButton(
                         onPressed: () async {
                           final url =
-                              '/Cse/3Yr/Mathematics-3/mse/MSE 2 3rd sem CS QP1-Part B.pdf';
+                              '/Cse/2Yr/even/os/mse/QP- OS_2021-MSE-2.pdf';
                           final file = await PDFApi.loadFirebase(url);
                           if (file == null) return;
                           openPDF(context, file);
@@ -70,7 +70,7 @@ class _OsState extends State<Os> {
                     children: [
                   ElevatedButton(
                       onPressed: () async {
-                        final url = 'Cse/3Yr/Mathematics-3/see/RandomPaper.pdf';
+                        final url = '/Cse/2Yr/even/os/mse/QP-OS_2021-MSE-3_Final.pdf';
                         final file = await PDFApi.loadFirebase(url);
                         if (file == null) return;
                         openPDF(context, file);

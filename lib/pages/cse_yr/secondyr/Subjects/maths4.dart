@@ -38,7 +38,7 @@ class _Maths4State extends State<Maths4> {
                     ElevatedButton(
                         onPressed: () async {
                           final url =
-                              'Cse/3Yr/Mathematics-3/mse/MSE 1 3rd sem CS QP1 Part B.pdf';
+                              '/Cse/2Yr/even/maths/mse/M4 CSE MSE-1 2021.pdf';
                           final file = await PDFApi.loadFirebase(url);
                           if (file == null) return;
                           openPDF(context, file);
@@ -47,7 +47,7 @@ class _Maths4State extends State<Maths4> {
                     ElevatedButton(
                         onPressed: () async {
                           final url =
-                              '/Cse/3Yr/Mathematics-3/mse/MSE 2 3rd sem CS QP1-Part B.pdf';
+                              '/Cse/2Yr/even/maths/mse/M4 MSE2 QP.pdf';
                           final file = await PDFApi.loadFirebase(url);
                           if (file == null) return;
                           openPDF(context, file);
@@ -56,7 +56,7 @@ class _Maths4State extends State<Maths4> {
                     ElevatedButton(
                         onPressed: () async {
                           final url =
-                              '/Cse/3Yr/Mathematics-3/mse/MSE 2 3rd sem CS QP1-Part B.pdf';
+                              '/Cse/2Yr/even/maths/mse/MSE-3-18MAT41A.pdf';
                           final file = await PDFApi.loadFirebase(url);
                           if (file == null) return;
                           openPDF(context, file);

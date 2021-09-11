@@ -38,7 +38,7 @@ class _DbmsState extends State<Dbms> {
                     ElevatedButton(
                         onPressed: () async {
                           final url =
-                              'Cse/3Yr/Mathematics-3/mse/MSE 1 3rd sem CS QP1 Part B.pdf';
+                              '/Cse/2Yr/even/dbms/mse/MSE-I-DBMS.pdf';
                           final file = await PDFApi.loadFirebase(url);
                           if (file == null) return;
                           openPDF(context, file);
@@ -47,7 +47,7 @@ class _DbmsState extends State<Dbms> {
                     ElevatedButton(
                         onPressed: () async {
                           final url =
-                              '/Cse/3Yr/Mathematics-3/mse/MSE 2 3rd sem CS QP1-Part B.pdf';
+                              '/Cse/2Yr/even/dbms/mse/MSE-II-DBMS- final-converted.pdf';
                           final file = await PDFApi.loadFirebase(url);
                           if (file == null) return;
                           openPDF(context, file);
@@ -56,7 +56,7 @@ class _DbmsState extends State<Dbms> {
                     ElevatedButton(
                         onPressed: () async {
                           final url =
-                              '/Cse/3Yr/Mathematics-3/mse/MSE 2 3rd sem CS QP1-Part B.pdf';
+                              '/Cse/2Yr/even/dbms/mse/MSE-III-DBMS-QP.pdf';
                           final file = await PDFApi.loadFirebase(url);
                           if (file == null) return;
                           openPDF(context, file);
