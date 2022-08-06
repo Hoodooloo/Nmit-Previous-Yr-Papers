@@ -1,6 +1,6 @@
 # Nmit Previous Year Papers
 
-A new Flutter project.
+A new Flutter project on previous year papers of our college(NMIT).
 
 ## Getting Started
 
